@@ -1,0 +1,12 @@
+# The range at which the FarmChest will harvest crops
+range:
+    - x-axis: 5 # The number of blocks that will be checked on the X axis
+    - z-axis: 5 # The number of blocks that will be checked on the Z axis
+
+# Should the FarmChest drop the items that weren't able to fit inside of it ?
+# Note that these items will be lost
+should-drop-leftover-items: true
+
+# Can the player destroy and pickup the FarmChest ?
+# If set to "false", once the block is placed, your players will be able to destroy it but it won't drop.
+can-player-pickup-block: true

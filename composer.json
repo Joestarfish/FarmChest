@@ -1,0 +1,19 @@
+{
+	"name": "joestarfish/farm-chest",
+	"description": "A PMMP plugin that modifies the Trapped Chest to make it harvest nearby crops",
+	"type": "project",
+	"license": "MIT",
+	"require-dev": {
+		"pocketmine/pocketmine-mp": "^5.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Joestarfish\\FakePearl\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Joestarfish"
+		}
+	]
+}
