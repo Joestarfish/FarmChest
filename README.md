@@ -2,7 +2,8 @@
 
 A PMMP plugin that modifies the Trapped Chest to make it harvest nearby crops
 
-[![](https://poggit.pmmp.io/shield.state/FarmChest)](https://poggit.pmmp.io/p/FarmChest) [![](https://poggit.pmmp.io/shield.dl.total/FarmChest)](https://poggit.pmmp.io/p/FarmChest)
+[![](https://poggit.pmmp.io/shield.api/FarmChest)](https://poggit.pmmp.io/p/FarmChest)
+[![](https://poggit.pmmp.io/shield.dl.total/FarmChest)](https://poggit.pmmp.io/p/FarmChest)
 
 The following crops will be harvested:
 
@@ -28,13 +29,13 @@ The following crops will be harvested:
 	</ul>
 </details>
 
-You could also use a plugin such as [VanillaHopper](https://poggit.pmmp.io/p/VanillaHopper/) that implements hopper. They will pick items inside of the chest and move them around your farm
-
 # Usage
 
 To use the FarmChest, you can simply right click on it and it will harvest crops in a specified zone.
 
 You can also sneak while clicking on the chest to make it harvest and keeping it closed
+
+You could also use a plugin such as [VanillaHopper](https://poggit.pmmp.io/p/VanillaHopper/) that implements hopper. They will pick items inside of the chest and move them around your farm
 
 # Configuration
 

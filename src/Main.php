@@ -7,7 +7,6 @@ namespace Joestarfish\FarmChest;
 use pocketmine\block\Block;
 use pocketmine\block\BlockTypeIds;
 use pocketmine\block\Crops;
-use pocketmine\block\inventory\ChestInventory;
 use pocketmine\block\NetherWartPlant;
 use pocketmine\block\SweetBerryBush;
 use pocketmine\block\tile\Chest as TileChest;
@@ -16,13 +15,11 @@ use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\event\inventory\InventoryTransactionEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
-use pocketmine\inventory\transaction\action\CreateItemAction;
 use pocketmine\inventory\transaction\InventoryTransaction;
 use pocketmine\item\Item;
 use pocketmine\item\VanillaItems;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
-use pocketmine\inventory\transaction\action\InventoryAction;
 use pocketmine\inventory\transaction\action\SlotChangeAction;
 
 class Main extends PluginBase implements Listener {
@@ -87,6 +84,7 @@ class Main extends PluginBase implements Listener {
 
 		// Without a transaction, hopper plugins might not notice that new items were added to the chest
 		// This isn't actually what happens but i don't think it will cause issues
+		// If it does, feel free to open an issue or a PR at https://github.com/Joestarfish/FarmChest/issues
 		$transaction = new InventoryTransaction($event->getPlayer(), [
 			new SlotChangeAction(
 				$inventory,
