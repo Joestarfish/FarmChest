@@ -45,4 +45,3 @@ Inside of the `plugin_data/FarmChest/config.yml` file, you may change the follow
     -   **x-axis** - The number of blocks that will be checked on the X axis
     -   **z-axis** - The number of blocks that will be checked on the Z axis
 -   **should-drop-leftover-items** - Should the FarmChest drop the items that weren't able to fit inside of it ?
--   **can-player-pickup-block** - Can the player destroy and pickup the FarmChest ?
