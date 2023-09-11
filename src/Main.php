@@ -8,6 +8,7 @@ use pocketmine\block\Block;
 use pocketmine\block\BlockTypeIds;
 use pocketmine\block\Crops;
 use pocketmine\block\inventory\ChestInventory;
+use pocketmine\block\NetherWartPlant;
 use pocketmine\block\SweetBerryBush;
 use pocketmine\block\tile\Chest as TileChest;
 use pocketmine\block\VanillaBlocks;
@@ -128,13 +129,17 @@ class Main extends PluginBase implements Listener {
 			BlockTypeIds::PUMPKIN,
 			BlockTypeIds::MELON,
 			BlockTypeIds::SWEET_BERRY_BUSH,
+			BlockTypeIds::NETHER_WART,
 		];
 
 		if (!in_array($block->getTypeId(), $valid_crops)) {
 			return false;
 		}
 
-		if ($block instanceof Crops && $block->getAge() < $block::MAX_AGE) {
+		if (
+			($block instanceof Crops || $block instanceof NetherWartPlant) &&
+			$block->getAge() < $block::MAX_AGE
+		) {
 			return false;
 		}
 
@@ -178,7 +183,9 @@ class Main extends PluginBase implements Listener {
 			$position->getFloorX(),
 			$position->getFloorY(),
 			$position->getFloorZ(),
-			$block instanceof Crops ? $block->setAge(0) : VanillaBlocks::AIR(),
+			$block instanceof Crops || $block instanceof NetherWartPlant
+				? $block->setAge(0)
+				: VanillaBlocks::AIR(),
 		);
 
 		return $drops;

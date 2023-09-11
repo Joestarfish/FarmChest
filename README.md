@@ -13,6 +13,7 @@ The following crops will be harvested:
 ![pumpkin_face_off](https://github.com/ZtechNetwork/MCBVanillaResourcePack/blob/master/textures/blocks/pumpkin_face_off.png?raw=true)
 ![melon](https://github.com/ZtechNetwork/MCBVanillaResourcePack/blob/master/textures/items/melon.png?raw=true)
 ![sweet_berries](https://github.com/ZtechNetwork/MCBVanillaResourcePack/blob/master/textures/items/sweet_berries.png?raw=true)
+![nether_wart](https://github.com/ZtechNetwork/MCBVanillaResourcePack/blob/master/textures/items/nether_wart.png?raw=true)
 
 <details>
 	<ul>
@@ -23,6 +24,7 @@ The following crops will be harvested:
 		<li>Pumpkin</li>
 		<li>Melon</li>
 		<li>Sweet berries</li>
+		<li>Nether Wart</li>
 	</ul>
 </details>
 
