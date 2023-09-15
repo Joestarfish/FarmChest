@@ -1,9 +1,4 @@
 {
-	"name": "farm-chest",
-	"version": "1.0.0",
-	"description": "A PMMP plugin that modifies the Trapped Chest to make it harvest nearby crops",
-	"author": "Joestarfish",
-	"license": "MIT",
 	"devDependencies": {
 		"@prettier/plugin-php": "^0.20.1"
 	},
