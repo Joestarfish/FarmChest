@@ -11,7 +11,6 @@ use pocketmine\block\NetherWartPlant;
 use pocketmine\block\SweetBerryBush;
 use pocketmine\block\tile\Chest as TileChest;
 use pocketmine\block\VanillaBlocks;
-use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\event\inventory\InventoryTransactionEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
@@ -103,19 +102,6 @@ class Main extends PluginBase implements Listener {
 		foreach ($leftover_drops as $item) {
 			$world->dropItem($position, $item);
 		}
-	}
-
-	public function onBreak(BlockBreakEvent $event) {
-		if ($event->getBlock()->getTypeId() != BlockTypeIds::TRAPPED_CHEST) {
-			return;
-		}
-
-		if ($this->config->get('can-player-pickup-block', true)) {
-			return;
-		}
-
-		// The content of the chest will still be dropped which is what we want
-		$event->setDrops([]);
 	}
 
 	private function isValidBlock(Block $block): bool {
